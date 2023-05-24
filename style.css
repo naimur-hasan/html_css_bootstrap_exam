@@ -1,0 +1,439 @@
+
+/* Reset css start  */
+img{
+    max-width: 100%;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Reset css end  */
+
+
+
+/* ********************google font**************************** */
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Rubik', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;}
+
+
+
+
+
+
+
+
+
+    /* *************************** Heading strat ********************** */
+
+    .heading .container {
+        max-width: 1665px;
+    }
+    .heading_menu{}
+    .heading_menu ul{
+        display: flex;
+    }
+    .heading_menu ul li{
+        margin: 0 20px;
+ 
+    }
+    .heading_menu ul li a{
+        text-decoration: none;
+        font-size: 19px;
+        color: #000;
+        font-weight: 500;
+        transition: .5s;
+    }
+
+    /* hover effect li  */
+    .heading_menu li{
+        position: relative;
+    }
+    .heading_menu li::before{
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 0;
+        background-color: #913bff;
+        bottom: 0;
+        left: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: .6s;
+    }
+    .heading_menu li:hover::before{
+        visibility: visible;
+        opacity: 1;
+        width: 100%;
+        
+    }
+    .heading_menu li:hover a{
+        color:#913bff;
+        
+    }
+    /* hover effect li  */
+    .telephone {
+    
+    }
+    /* *************************** Heading end ********************** */
+
+
+    /*  ***************************banner start ********************************  */
+    .banner {
+        background: url(./img/pexels-hasan-albari-1229861.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 306px 0;
+    }
+    .banner .banner_content .heading_text{
+      
+            font-size: 87px;
+          
+    
+    }
+    .banner .banner_content .sub_text{
+      
+            font-size: 26px;
+          
+    
+    }
+    /*  *************************** banner end ********************************  */
+
+
+
+
+
+
+
+
+
+    /* ****************** users, products & subscriber strat **************  */
+    .users h1{
+        font-size: 50px;
+    }
+    /* ****************** users, products & subscriber end **************  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /***************** creative products start  ***********************/
+    .creative_product{
+        background-color: #cecece;
+        padding: 90px;
+    }
+
+    .card .card_image{
+        height: 216px;
+    }
+    .creative_product{
+        position: relative;
+    }
+    .creative_product row{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .card-text:hover{
+        color: #913bff;
+    }
+    .card-text{
+        font-size: 20px;
+       
+    }
+  
+
+    /* hover effect  */
+    .card_img{
+        position: relative;
+        overflow: hidden;
+        
+    }
+    .card-title{
+        color: #913cfe;
+    }
+    .card_img::before {
+        content: "\f061";
+        font-family: "Font Awesome 6 pro"; 
+        color: #fff;
+        line-height: 75px;
+        font-weight: 900;
+        position: absolute;
+        bottom: -38px;
+        right: -28px;
+        width: 0px;
+        height: 0px;
+        background-color:#913cfe;
+        border-radius: 50%;
+        visibility: hidden;
+        opacity: 0;
+        transition: .5s;
+        
+    }
+    .creative_card:hover .card_img::before{
+        visibility: visible;
+        opacity: 1;
+        width: 100px;
+        height: 100px;
+    }
+    .creative_card{
+        transition: .3s;
+       
+        
+    }
+    .creative_card:hover{
+        transform: translateY(10px);
+
+
+    }
+   
+   
+    
+    /* hover effect  */
+
+    /***************** creative products end  ***********************/
+
+
+
+
+
+
+    /**************** Features start  *******************/
+    .box {
+        padding: 46px;
+        box-shadow: 3px 3px 44px #bdc7df;
+        transition: .3s;
+    }
+    .icon{
+        font-size: 47px;
+        color: #913bff;
+    }
+    .box p{
+    line-height: 25px;
+    
+    }
+    .box:hover{
+        transform: translateY(10px);
+    }
+    /**************** Features end  *******************/
+
+
+    /********************** portfolio start *************** */
+    .portfolio{
+        background-color: #fdfffe;
+    }
+    /********************** portfolio end *************** */
+
+
+    /******************* recent item start  *******************/
+.recent{
+    background-color: #cecece;
+}
+.recent_text {
+    font-size: 21px;
+}
+.card_imgs{
+    position: relative;
+    overflow: hidden;
+    
+}
+.card_imgs::before {
+    content: "";
+    font-family: "Font Awesome 6 pro"; 
+    color: #fff;
+    line-height: 75px;
+    font-weight: 900;
+    position: absolute;
+    bottom: -38px;
+    right: -28px;
+    width: 0px;
+    height: 0px;
+    background-color:#913cfe;
+    border-radius: 50%;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    
+}
+.creative_card:hover .card_imgs::before{
+    visibility: visible;
+    opacity: 1;
+    width: 100px;
+    height: 100px;
+}
+.icons {
+    position: absolute;
+    bottom: 12px;
+    right: 22px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+}
+.creative_card:hover .icons{
+    visibility: visible;
+    opacity: 1;
+}
+
+    /******************* recent item end  *******************/
+
+
+
+    /**************** price start  *****************/
+    .price{
+        background-image: url(./img/background6.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 800px;
+    }
+    .price_box {
+        background-color: #fff;
+        margin-top: 147px;
+        height: 445px;
+        width: 298px;
+        padding: 30px;
+        border-radius: 10px;
+    }
+    .price_button{
+        border: 2px solid #0166ff;
+        border-radius: 30px;
+        margin: 40px 0px;
+    }
+    .price_button:hover{
+        border: 2px solid #0166ff;
+    }
+    .price_box_color{
+        background-color: #0166ff;
+    }
+    .price_middle_button{
+        background-color: #fff;
+    }
+    .price_middle_button:hover{
+        background-color: #fff;
+    }
+    .hover:hover{
+        background-color: #0166ff;
+        color: #fff;
+    }
+    .dolar{
+        font-size: 50px;
+    }
+    .xc{
+        font-size: 35px;
+    }
+    /**************** price end  *****************/
+
+
+    /*************** lorem start  ************/
+    .lorem{
+        background-image: url(./img/background2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .lorem_box{
+        height: 500px;
+        width: 900px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .lorem_text{
+        padding: 0px 50px;
+    }
+    .quots_icon {
+        position: absolute;
+        top: 50px;
+        right: 440px;
+        font-size: 52px;
+    }
+    /*************** lorem end  ************/
+
+
+
+
+    /****************** community start **************** */
+    .community{
+        background-image: url(./img/background4.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .community-box{
+        height: 200px;
+        width: 1100px;
+        background-color: black;
+    }
+    .btn_button{
+        background-color: #fff;
+        position: relative;
+        overflow: hidden;
+    }
+    .btn_button:hover{
+        background-color: #fff;
+    }
+
+
+    .btn_button::before {
+        content: '';
+        width: 75px;
+        height: 75px;
+        position: absolute;
+        left: 10px;
+        top: -21px;
+        background-color:#ffff;
+        border-radius: 50%;
+        animation: mymove 1s ease-in-out infinite ;
+        visibility: hidden;
+        opacity: 0;
+     
+    }
+    @keyframes mymove {
+        0%   {transform: scale(0);
+        opacity: 1;
+    }
+        50%  {transform: scale(1.2);
+            opacity: .0;}
+        100%  {transform: scale(2);
+            opacity: 0;}
+       
+    
+      }
+
+      .test:hover .btn_button::before{
+        visibility: visible;
+        opacity: 1;
+        
+
+      }
+    
+    
+    /****************** community end **************** */
